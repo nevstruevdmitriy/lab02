@@ -8,11 +8,11 @@ $ open https://git-scm.com
 
 ## Tasks
 
-- [ ] 1. Создать публичный репозиторий с названием **lab02** и с лиценцией **MIT**
-- [ ] 2. Сгенирировать токен для доступа к сервису **GitHub** с правами **repo**
-- [ ] 3. Ознакомиться со ссылками учебного материала
-- [ ] 4. Выполнить инструкцию учебного материала
-- [ ] 5. Составить отчет и отправить ссылку личным сообщением в **Slack**
+- [x] 1. Создать публичный репозиторий с названием **lab02** и с лиценцией **MIT**
+- [x] 2. Сгенирировать токен для доступа к сервису **GitHub** с правами **repo**
+- [x] 3. Ознакомиться со ссылками учебного материала
+- [x] 4. Выполнить инструкцию учебного материала
+- [x] 5. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 ## Tutorial
 
@@ -68,6 +68,20 @@ $ git push origin master
 ```ShellSession
 $ git pull origin master
 $ git log
+
+commit 06d28dd8f7c88c3e58fceae4d574db18c7c6f5e6 (HEAD -> master, origin/master)
+Author: dimkanevstruev <nevstruev.dmitriy@mail.ru>
+Date:   Thu Mar 26 12:13:21 2020 +0300
+
+    add gitignore
+
+commit 7dc612e3853df56da2d5471b2a44e3831dab8423
+Author: dimkanevstruev <nevstruev.dmitriy@mail.ru>
+Date:   Thu Mar 26 12:12:11 2020 +0300
+
+    added README.md
+
+
 ```
 
 ```ShellSession
