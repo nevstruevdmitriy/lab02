@@ -1,12 +1,9 @@
 #include <iostream>
 #include <string>
 
-
-using namespace std;
-
 int main () {
-	string user_name;
-	cin >> user_name;
-	cout << "hello word from" << user_name;
+	std::string user_name; // name user \\ имя пользователя
+	std::cin >> user_name; // ask \\ спросим
+	std::cout << "hello word from" << user_name; // say hello \\ поздоровываемся
 	return 0;
 }
