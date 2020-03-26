@@ -1,0 +1,4 @@
+*build*/
+*inistall*/
+*.swp
+.idea/
