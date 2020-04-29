@@ -16,6 +16,7 @@ $ open https://git-scm.com
 
 ## Tutorial
 
+Высталяем переменные имя пользователя, емайл, токен гитхаба
 ```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export GITHUB_EMAIL=<адрес_почтового_ящика>
@@ -23,11 +24,13 @@ $ export GITHUB_TOKEN=<сгенирированный_токен>
 $ alias edit=<nano|vi|vim|subl>
 ```
 
+Переходим в рабочую папку
 ```ShellSession
 $ cd ${GITHUB_USERNAME}/workspace
 $ source scripts/activate
 ```
 
+Заполняем конфиг для гитхаба
 ```ShellSession
 $ mkdir ~/.config
 $ cat > ~/.config/hub <<EOF
@@ -39,6 +42,7 @@ EOF
 $ git config --global hub.protocol https
 ```
 
+Создаём репозиторий для второй лабы, выставляем конфиги, делаем первый комит
 ```ShellSession
 $ mkdir projects/lab02 && cd projects/lab02
 $ git init
@@ -58,6 +62,8 @@ $ git push origin master
 Добавить на сервисе **GitHub** в репозитории **lab02** файл **.gitignore**
 со следующем содержимом:
 
+
+содержимое
 ```ShellSession
 *build*/
 *install*/
@@ -65,6 +71,7 @@ $ git push origin master
 .idea/
 ```
 
+выкачиваем изменения из удалённого репозитория
 ```ShellSession
 $ git pull origin master
 $ git log
@@ -84,6 +91,7 @@ Date:   Thu Mar 26 12:12:11 2020 +0300
 
 ```
 
+добавяем новый исходник
 ```ShellSession
 $ mkdir sources
 $ mkdir include
@@ -103,6 +111,7 @@ void print(const std::string& text, std::ofstream& out)
 EOF
 ```
 
+заголовочный файл к этому исходнику
 ```ShellSession
 $ cat > include/print.hpp <<EOF
 #include <fstream>
@@ -114,6 +123,7 @@ void print(const std::string& text, std::ostream& out = std::cout);
 EOF
 ```
 
+ещё один исходник-пример работы с библиотекой
 ```ShellSession
 $ cat > examples/example1.cpp <<EOF
 #include <print.hpp>
@@ -125,6 +135,7 @@ int main(int argc, char** argv)
 EOF
 ```
 
+и ещё один пример работы с библиотекой
 ```ShellSession
 $ cat > examples/example2.cpp <<EOF
 #include <print.hpp>
@@ -143,6 +154,7 @@ EOF
 $ edit README.md
 ```
 
+проверяем статус текущей ветки и добавляем всё на удалённый
 ```ShellSession
 $ git status
 
